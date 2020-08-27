@@ -1,0 +1,254 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comfortaa', cursive;
+    background: #EFEFEF;
+}
+.nav-top{
+    display:flex;
+    flex-flow: row nowrap;
+    height: 70px;
+}
+.nav-item{
+    height: 100%;
+    flex-basis: 15%;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: margin-top 0.3s ease-in-out;
+}
+.nav-item:hover{
+    background: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.nav-item i{
+    height: 20px;
+    position: relative;
+    color: gray;
+    margin-top: 0.7em;
+}
+.nav-item p{
+    color: gray;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.nav-user{
+    position: relative;
+    right: 0;
+    flex-basis: 30% !important;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end !important;
+    margin-left: 30%;
+
+}
+.nav-nick{
+    flex-basis: 40%;
+    color: #5E2B97;
+    font-weight: 600;
+}
+.nav-xp{
+    flex-basis: 45%;
+    text-align: end;
+}
+.nav-xp i{
+    background: white;
+    color: red;
+    padding: 3px;
+    border-radius: 5px; 
+    margin-top: 0 !important;
+}
+.nav-foto{
+    background-image: url(/img/eu1.jpg);
+    background-size: 100%;
+    height: 50px;
+    width: 50px;
+    border: 2px #5E2B97 solid;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+section.nivel{
+text-align: center;
+background-color: #4A86E8;
+padding-top: 10px;
+padding-bottom: 20px;
+}
+section.nivel p{
+    font-weight: 900;
+    color: #fff;
+}
+.nivel-nums{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.nivel-num{
+    height: 20px;
+    width: 15px;
+    background-color: #EFEFEF;
+    margin-right: 10px;
+    padding: 10px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 900;
+}
+.main-row{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.perfil{
+    flex-basis: 30%;
+    background: linear-gradient(0deg, rgba(32,18,77,1) 0%,
+     rgba(32,18,77,1) 70%,
+     rgba(94,43,151,1) 70%,
+     rgba(94,43,151,1) 100%);
+    margin: 20px 40px;
+    border-radius: 30px;
+}
+.perfil-foto{
+    background-image: url(/img/eu1.jpg);
+    background-size: 100%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 20px;
+}
+.perfil-info p{
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+}
+p.nick{
+    font-size: 25px;
+    margin-top: 30px;
+}
+p.email{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.perfil-edit button{
+    width: 100px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%,
+     rgba(255,255,255,1) 50%,
+     rgba(255,255,255,0) 50%,
+     rgba(255,255,255,0) 100%);
+    border: none;
+    border-radius: 100%;
+    height: 100px;
+    position: relative;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.perfil-edit button:focus{
+    outline: none;
+}
+.perfil-edit i {
+    margin-bottom: 35%;
+    color: #20124D;
+}
+.conquistas h1{
+    font-weight: 900;
+    font-size: 35px;
+    color: #20124D;
+    margin-bottom: 0;
+}
+.conquistas hr{
+    border: 1px solid #20124D;
+    width: 20%;
+    margin-left: 0;
+
+}
+.conquistas button{
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    color: #20124D;
+    font-weight: 900;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+footer .linha1, footer .linha2{
+    width: 40%;
+    height: 2px;
+}
+footer .linha1{
+    background-color: #20124D;
+}
+footer .linha2{
+    background-color: #4A86E8;
+}
+footer .min-logo{
+    background-image: url(/exem-logo.png);
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.emblemas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px;
+    perspective: 1000;
+}
+.emb{
+    flex-basis: 30%;
+}
+.emb i{
+    color: #5E2B97;
+    margin: 10px;
+    transition: opacity 1s ease-in;
+}
+.emb p{
+    display: none;
+    opacity: 0;
+    width: 60%;
+    position: relative;
+    bottom: 50%;
+    margin: 0;
+    transition: opacity 1s ease-out;
+}
+.emb span{
+    margin: 0;
+    font-weight: 900;
+}
+.emb:hover p{
+    display: block;
+    opacity:1;
+}
+.emb:hover i{
+    opacity: 0;
+}
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
+

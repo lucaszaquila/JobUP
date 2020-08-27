@@ -1,0 +1,60 @@
+@import url("top.less");
+@import url("bottom.less");
+
+.recompensas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .recomp{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        flex-basis: 25%;
+        background-color: rgb(230,230,230);
+        margin: 20px;
+        padding: 0;
+        border: 1px solid rgb(200,200,200);
+        border-radius: 30px;
+        transition: top 0.5s;
+        transition: background-color 1.5s ease-out;
+        &:hover{
+   
+            background-color: white;
+        }
+        &-foto{
+            background-image: url(/img/hawaii.jpg);
+            background-size: 100%;
+            height: 150px;
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom: 1px solid rgb(200,200,200);
+        }
+        &-price{
+            color: grey;
+        }
+        &-tit{
+            font-weight: 900;
+            font-size: 30px;
+            color: #4A86E8;
+        }
+        &-desc{
+            width: 60%;
+            margin: 10px;
+        }
+        & button{
+            width: 80%;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: #4A86E8;
+            color: #fff;
+            border-radius: 999px;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
