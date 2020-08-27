@@ -1,180 +1,51 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Comfortaa', cursive;
-    background: #efefef;
-    .tit{
-        margin-left: 20px;
-        margin-top: 20px;
-        h1{
-        font-weight: 900;
-        font-size: 35px;
-        color: #20124D;
-        margin-bottom: 0;
-        }
-        hr{
-        border: 2px solid #20124D;
-        width: 100px;
-        margin-left: 0;
-        }
-    }
-    .nav{
-        &-top{
-            background-color: #efefef;
-            display:flex;
-            flex-flow: row nowrap;
-            height: 70px;
-            margin: 0;
-            padding-top: 10px;
-            padding-bottom: 30px;
-            -webkit-box-shadow: 0px 5px 3px 0px rgba(200,200,200,0.5);
-            -moz-box-shadow: 0px 5px 3px 0px rgba(200,200,200,0.5);
-            box-shadow: 0px 5px 3px 0px rgba(200,200,200,0.5);
-        }
-        &-item{
-            height: 100%;
-            flex-basis: 15%;
-            text-align: center;
-            text-decoration: none;
-            list-style-type: none;
-            align-content: center;
-            justify-content: center;
-            padding-top: 10px;
-            transition: margin-top 0.3s ease-in-out;
-            cursor: pointer;
-            &:hover{
-                background: rgba(255, 255, 255, 0.4);
-                margin-top: 10px;
-                border-radius: 10px;
-            }
-            & i{
-                height: 20px;
-                position: relative;
-                color: gray;
-                margin-top: 0.7em;
-            }
-            & p{
-                color: gray;
-                font-weight: 600;
-                margin-top: 2px;
-            }
-        }
-        &-user{
-            position: relative;
-            right: 0;
-            flex-basis: 30% !important;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: end !important;
-            margin-left: 30%;
-            margin-right: 5px;
-        }
-        &-nick{
-            flex-basis: 40%;
-            color: #5E2B97;
-            font-weight: 600;
-        }
-        &-xp{
-            flex-basis: 45%;
-            text-align: end;
-            & i{
-                background: white;
-                color: red;
-                padding: 3px;
-                border-radius: 5px; 
-                margin-top: 0 !important;
-            }
-        }
-        &-foto{
-            background-image: url(/img/eu1.jpg);
-            background-size: 100%;
-            height: 50px;
-            width: 50px;
-            border: 2px #5E2B97 solid;
-            border-radius: 100%;
-            margin-left: 10px;
-        }
-    }
-    .conquistas{
+@import "top.less";
+@import "bottom.less";
+
+.conquistas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .conq{
+        position: relative;
+        top: 0;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        .conq{
-            position: relative;
-            top: 0;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            background-color: rgb(230,230,230);
-            margin: 20px;
-            padding: 0;
-            border: 1px solid rgb(200,200,200);
-            border-radius: 30px;
-            flex-basis: 25%;
-            transition: top 0.5s;
-            p{
-                color: grey;
-            }
-            &-tit{
-                font-weight: 900;
-                font-size: 20px;
-                color: grey;
-            }
-            i{
-                color: lightgrey;
-                margin: 10px;
-            }
-            &-desc{
-                width: 60%;
-            }
-            &-bar{
-                width: 100%;
-                height: 20px;
-                border-bottom-left-radius: 30px;
-                border-bottom-right-radius: 30px;
-                background: linear-gradient(90deg,
-                 rgba(200,200,200,1) 0%,
-                 rgba(200,200,200,1) 70%,
-                 rgba(255,255,255,0) 70%,
-                 rgba(255,255,255,0) 100%);
-            }
-            &:hover{
-                top:-10px
-            }
-        }
-    }
-    footer{
-        display: flex;
-        justify-content: space-around;
+        flex-flow: column nowrap;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 7px;
-        .linha1{
-            background-color: #5E2B97;
+        background-color: rgb(230,230,230);
+        margin: 20px;
+        padding: 0;
+        border: 1px solid rgb(200,200,200);
+        border-radius: 30px;
+        flex-basis: 25%;
+        transition: top 0.5s;
+        p{
+            color: grey;
         }
-        .linha2{
-            background-color: #4A86E8;
+        &-tit{
+            font-weight: 900;
+            font-size: 20px;
+            color: grey;
         }
-        .linha1, .linha2{
-            width: 40%;
-            height: 2px;
+        i{
+            color: lightgrey;
+            margin: 10px;
         }
-        .min-logo{
-            background-image: url(/img/exem-logo.png);
-            width: 30px;
-            height: 30px;
-            background-size: 100%;
-            background-repeat: no-repeat;
+        &-desc{
+            width: 60%;
         }
-    } 
-}
-::-webkit-scrollbar-track {
-    background-color: #F4F4F4;
-}
-::-webkit-scrollbar {
-    width: 6px;
-    background: #F4F4F4;
-}
-::-webkit-scrollbar-thumb {
-    background: #dad7d7;
+        &-bar{
+            width: 100%;
+            height: 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background: linear-gradient(90deg,
+                rgba(200,200,200,1) 0%,
+                rgba(200,200,200,1) 70%,
+                rgba(255,255,255,0) 70%,
+                rgba(255,255,255,0) 100%);
+        }
+        &:hover{
+            top:-10px
+        }
+    }
 }
