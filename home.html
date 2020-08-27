@@ -1,34 +1,50 @@
-<html>
-    <head>
-        <title>JobUP - Home</title>
-        <link rel="stylesheet" href="css-less/home.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/124e7fd2c8.js" crossorigin="anonymous"></script>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobUP - Home</title>
+    <link rel="stylesheet/less" type="text/css" href="css-less/home.less" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/124e7fd2c8.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/less" ></script>
+</head>
     <body>
         <nav>
             <ul class="nav-top">
-                <li class="nav-item">
-                    <i class="fa fa-trophy fa-lg"></i>
-                    <p>Recompensas</p>
-                </li>
-                <li class="nav-item">
-                    <i class="fa fa-flag fa-lg"></i>
-                    <p>Conquistas</p>
-                </li>
-                <li class="nav-item">
-                    <i class="fa fa-trophy  fa-lg"></i>
-                    <p>Ranking</p>
-                </li>
-                <li class="nav-item">
-                    <i class="fa fa-check-square-o  fa-lg"></i>
-                    <p>Tarefas</p>
-                </li>
+                <a href="recompensas.html" class="nav-item"> 
+                    <li>
+                       <i class="fa fa-trophy fa-lg"></i>
+                       <p>Recompensas</p>
+                    </li>
+                </a>
+                <a href="conquistas.html" class="nav-item">  
+                    <li>
+                        <i class="fa fa-flag fa-lg"></i>
+                        <p>Conquistas</p>
+                    </li>
+                </a>
+                <a href="ranking.html" class="nav-item">
+                    <li>
+                        <i class="fa fa-trophy  fa-lg"></i>
+                        <p>Ranking</p>
+                    </li>
+                </a>
+                <a href="tarefas.html" class="nav-item">
+                    <li>
+                        <i class="fa fa-check-square-o  fa-lg"></i>
+                        <p>Tarefas</p>
+                    </li>
+                </a>
+    
                 <li class="nav-item nav-user">
-                    <div class="nav-nick">lucaszaquila</div>
-                    <div class="nav-xp"><i class="fa fa-codepen"> 51</i></div>
-                    <div class="nav-foto"></div>
+                    <div class="nav-user-nick">lucaszaquila</div>
+                    <div class="nav-user-row">
+                        <div class="nav-user-row-gold"><i class="fab fa-bitcoin"> 284</i></div>
+                        <div class="nav-user-row-xp"><i class="fa fa-codepen"> 51</i></div>
+                    </div>
+                    <div class="nav-user-foto"></div>
                 </li>
             </ul>
         </nav>
