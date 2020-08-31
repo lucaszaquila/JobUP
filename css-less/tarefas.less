@@ -1,0 +1,59 @@
+@import "top.less";
+@import "bottom.less";
+
+.tarefas{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: 70%;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    .tar{
+        display: flex;
+        flex-flow: row nowrap;
+        border-radius: 10px;
+        background-color: #4A86E8;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin: 10px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        &:hover{
+        background-color: rgb(87, 151, 255);
+        }
+        &-icon{
+            background-color: lightgrey;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-weight: 900;
+            }
+        }
+        &-desc{
+            padding-left: 10px;
+            color: #fff;
+            flex-basis: 70%;
+        }
+    }
+    button{
+        background-color: #4A86E8;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+        i{
+            color: white;
+        }
+    }
+}
