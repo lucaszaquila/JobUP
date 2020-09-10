@@ -8,6 +8,6 @@ function reduzIconeLG(tam){
 }
 
 var tam = window.matchMedia("(max-width: 700px)");
-reduzIconeLG(tam);
 tam.addListener(reduzIconeLG);
+reduzIconeLG(tam);
 

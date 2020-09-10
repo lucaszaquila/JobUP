@@ -1,0 +1,149 @@
+@import "top.less";
+@import "bottom.less";
+
+.ranking{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .ran{
+        &-fil{
+            width: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            select, input{
+                background-color: transparent;
+                border: 2px solid #4A86E8;
+                color: #4A86E8;
+                padding: 10px;
+                border-radius: 10px;
+                font-weight: 900;
+            }
+            input{
+                margin-right: 50px;
+            }
+        }
+        &-top{
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            height: 300px;
+            width: 500px;
+            &-1, &-2, &-3{
+                display: flex;
+                flex-flow: column-reverse nowrap;
+            }
+            &-1{
+                order: 2;
+                height: 100%;
+                &-img{
+                    background-image: url(/img/eu1.jpg);
+                    background-size: 100%;
+                    border: 2px solid #20124D;
+                    height: 90px;
+                    width: 90px;
+                    border-radius: 100%;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+                &-pod{
+                    height: 60%;
+                    background-color: #20124D;
+                    color: #efefef;;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    padding-top: 15px;
+                    margin-top: 10px;
+                    font-weight: 900;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+            }
+            &-2{
+                order: 1;
+                height: 100%;
+                &-img{
+                    background-image: url(/img/eu1.jpg);
+                    background-size: 100%;
+                    border: 2px solid #20124D;
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 100%;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+                &-pod{
+                    height: 40%;
+                    background-color: #20124D;
+                    color: #efefef;;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    padding-top: 15px;
+                    margin-top: 10px;
+                    font-weight: 900;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 10px;
+                }
+            }
+            &-3{
+                order: 3;
+                height: 100%;
+                &-img{
+                    background-image: url(/img/eu1.jpg);
+                    background-size: 100%;
+                    border: 2px solid #20124D;  
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 100%;
+                    position: relative;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+                &-pod{
+                    height: 30%;
+                    background-color: #20124D;
+                    color: #efefef;;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 30px;
+                    padding-top: 15px;
+                    margin-top: 10px;
+                    font-weight: 900;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+            &-ot{
+                background-color: #4A86E8;
+                width: 500px;
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                &-pos{
+                    font-weight: 900;
+                    color: #efefef;
+                    p{
+                        width: 80%;
+                        padding: 20px;
+                        border-radius: 5px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        background: none;
+                        transition: background 0.5s;
+                    }
+                    &:hover p{
+                        background: rgba(0,0,0,0.2);
+                    }
+                }
+            }
+        }
+    }
+}
