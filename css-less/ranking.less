@@ -28,11 +28,18 @@
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
-            height: 300px;
+            height: 330px;
             width: 500px;
             &-1, &-2, &-3{
                 display: flex;
                 flex-flow: column-reverse nowrap;
+                span{
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    color: #5E2B97;
+                    margin-top: 10px;
+                }
             }
             &-1{
                 order: 2;
@@ -128,16 +135,20 @@
                 margin-bottom: 20px;
                 border-radius: 10px;
                 &-pos{
-                    font-weight: 900;
+
                     color: #efefef;
                     p{
-                        width: 80%;
+                        width: 100%;
                         padding: 20px;
                         border-radius: 5px;
                         margin-top: 5px;
                         margin-bottom: 5px;
                         background: none;
                         transition: background 0.5s;
+                    }
+                    span{
+                        text-transform: uppercase;
+                        font-weight: 900;
                     }
                     &:hover p{
                         background: rgba(0,0,0,0.2);
