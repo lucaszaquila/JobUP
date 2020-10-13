@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,111 +10,92 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="/js/reduzIcone.js"></script>
     <script src="https://kit.fontawesome.com/124e7fd2c8.js" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/less" ></script>
+    <script src="//cdn.jsdelivr.net/npm/less"></script>
 </head>
-    <body>
-        <nav>
-            <ul class="nav-top">
-                <a href="recompensas.html" class="nav-item"> 
-                    <li>
-                       <i class="fa fa-trophy fa-lg"></i>
-                       <p>Recompensas</p>
-                    </li>
-                </a>
-                <a href="conquistas.html" class="nav-item">  
-                    <li>
-                        <i class="fa fa-flag fa-lg"></i>
-                        <p>Conquistas</p>
-                    </li>
-                </a>
-                <a href="ranking.html" class="nav-item">
-                    <li>
-                        <i class="fa fa-trophy  fa-lg"></i>
-                        <p>Ranking</p>
-                    </li>
-                </a>
-                <a href="tarefas.html" class="nav-item">
-                    <li>
-                        <i class="fa fa-check-square-o  fa-lg"></i>
-                        <p>Tarefas</p>
-                    </li>
-                </a>
-    
-                <li class="nav-item nav-user">
-                    <div class="nav-user-nick">lucaszaquila</div>
-                    <div class="nav-user-row">
-                        <div class="nav-user-row-gold">
-                            <div class="nav-user-row-bg">
-                                <i class="fab fa-bitcoin"></i>
-                                <span>284</span> 
-                            </div>
-                        </div>
-                        <div class="nav-user-row-xp">
-                            <div class="nav-user-row-bg">
-                                <i class="fa fa-codepen"></i>
-                                <span>51</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nav-user-foto"></div>
+
+<body>
+    <nav>
+        <ul class="nav-top">
+            <a href="recompensas.html" class="nav-item">
+                <li>
+                    <i class="fa fa-trophy fa-lg"></i>
+                    <p>Recompensas</p>
                 </li>
-            </ul>
-        </nav>
-        <section class="nivel">
-            <p>Nível</p>
-            <div class="nivel-nums">
-                <div class="nivel-num">1</div>
-                <div class="nivel-num">5</div>
-                <div class="nivel-num">0</div>
+            </a>
+            <a href="conquistas.html" class="nav-item">
+                <li>
+                    <i class="fa fa-flag fa-lg"></i>
+                    <p>Conquistas</p>
+                </li>
+            </a>
+            <a href="ranking.html" class="nav-item">
+                <li>
+                    <i class="fa fa-trophy  fa-lg"></i>
+                    <p>Ranking</p>
+                </li>
+            </a>
+            <a href="tarefas.html" class="nav-item">
+                <li>
+                    <i class="fa fa-check-square-o  fa-lg"></i>
+                    <p>Tarefas</p>
+                </li>
+            </a>
+
+            <li class="nav-item nav-user" onclick="location.href='perfil.html'">
+                <div class="nav-user-nick">lucaszaquila</div>
+                <div class="nav-user-row">
+                    <div class="nav-user-row-gold">
+                        <div class="nav-user-row-bg">
+                            <i class="fas fa-coins"></i>
+                            <span>284</span>
+                        </div>
+                    </div>
+                    <div class="nav-user-row-xp">
+                        <div class="nav-user-row-bg">
+                            <i class="fas fa-star"></i>
+                            <span>51</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-user-foto"></div>
+            </li>
+        </ul>
+    </nav>
+    <div class="tit">
+        <h1>Bem Vindo!</h1>
+        <hr>
+    </div>
+    <section class="bemv">
+        <div class="bemv-text">
+            <div class="bemv-text-1">
+                <p>Ganhamos um reforço na nossa equipe, a partir de hoje temos um novo colaborador vestindo a nossa
+                    camisa.
+                </p>
+
+                <p>Muitas das horas do nosso dia e da nossa vida passamos no trabalho, por isso tentamos sempre fazer
+                    com
+                    que o
+                    tempo na empresa seja, além de produtivo, muito agradável, criando sempre um ambiente saudável e
+                    amistoso.</p>
+
+                <p>Desejamos que você se sinta bem entre nós, que faça parte das nossas vivências, que encontre
+                    oportunidades e
+                    condições para aprender e crescer.</p>
+
+                <p>Esperamos sinceramente que a sua experiência conosco seja excelente e duradoura. Sinta-se muito bem
+                    acolhido. Desejamos as boas-vindas, muitas realizações e sucesso nesta nova empreitada. Boa sorte e
+                    bom
+                    trabalho!</p>
             </div>
-        </section>
-        <div class="main-row">        
-            <section class="perfil">
-                <div class="perfil-foto"></div>
-                <div class="perfil-info">
-                    <p class="nick">lucaszaquila</p>
-                    <p class="email">lucaszaquila@gmail.com</p>
-                </div>
-                    <button id=""><i class="fa fa-edit fa-lg"></i></button>
-            </section>
-            <section class="conquistas">
-                <h1>Minhas conquistas</h1>
-                <hr/>
-                <div class="emblemas">
-                    <div class="emb">
-                        <i class="fa fa-ghost fa-10x"></i>
-                        <p><span>Descrição: </span>Roubou a melhor carta de outro jogador N vezes</p>
-                    </div>
-                    <div class="emb">
-                        <i class="fa fa-ghost fa-10x"></i>
-                        <p><span>Descrição: </span>Roubou a melhor carta de outro jogador N vezes</p>
-                    </div>
-                    <div class="emb">
-                        <i class="fa fa-ghost fa-10x"></i>
-                        <p><span>Descrição: </span>Roubou a melhor carta de outro jogador N vezes</p>
-                    </div>
-                    <div class="emb">
-                        <i class="fa fa-ghost fa-10x"></i>
-                        <p><span>Descrição: </span>Roubou a melhor carta de outro jogador N vezes</p>
-                    </div>
-                    <div class="emb">
-                        <i class="fa fa-ghost fa-10x"></i>
-                        <p><span>Descrição: </span>Roubou a melhor carta de outro jogador N vezes</p>
-                    </div>
-                    <div class="emb">
-                        <i class="fa fa-ghost fa-10x"></i>
-                        <p><span>Descrição: </span>Roubou a melhor carta de outro jogador N vezes</p>
-                    </div>
-                </div>
-                <div class="conquistas-edit">
-                    <button id="">Ver todas ></button>
-                </div>
-            </section>
         </div>
-        <footer>
-            <div class="linha1"></div>
-            <div class="min-logo"></div>
-            <div class="linha2"></div>
-        </footer>  
-    </body>
+        <div class="bemv-fig"></div>
+        <div class="bemv-btn"></div>
+    </section>
+    <footer>
+        <div class="linha1"></div>
+        <div class="min-logo"></div>
+        <div class="linha2"></div>
+    </footer>
+</body>
+
 </html>
